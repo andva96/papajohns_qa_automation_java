@@ -1,0 +1,7 @@
+com\pageobjects\FavoritePizzaOptions.class
+com\pageobjects\CheckoutCart.class
+com\pageobjects\PersonalizePizzaOptions.class
+com\pageobjects\LandingPage.class
+com\pageobjects\NavigationBar.class
+com\pageobjects\SelectPizzaToppings.class
+com\pageobjects\PageBase.class
