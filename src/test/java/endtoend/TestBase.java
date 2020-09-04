@@ -11,8 +11,8 @@ import java.util.concurrent.TimeUnit;
 
 public class TestBase {
 
-    public WebDriver driver;
-    NavigationBar navigation;
+    static WebDriver driver;
+    static NavigationBar navigation;
 
     @BeforeSuite
     public void previousSettings() {
