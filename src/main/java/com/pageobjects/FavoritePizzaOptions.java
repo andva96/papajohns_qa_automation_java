@@ -14,11 +14,12 @@ public class FavoritePizzaOptions extends PageBase {
     @FindBy(xpath = "//img[@title='CARNES']")
     private WebElement meetOption;
 
-    public SelectSizeAndCrust selectMeetOption() {
+    public PersonalizePizzaOptions selectPizzaType(String type) {
 
-        waitUntilVisibilityOfElement(meetOption);
-        meetOption.click();
-        return new SelectSizeAndCrust(driver);
+        if (type.equalsIgnoreCase("meet")) {
+            clickOnElement(meetOption);
+        }
+        return new PersonalizePizzaOptions(driver);
     }
 
 

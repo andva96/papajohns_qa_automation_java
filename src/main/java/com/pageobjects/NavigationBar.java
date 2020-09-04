@@ -18,6 +18,7 @@ public class NavigationBar extends PageBase {
 
         waitUntilVisibilityOfElement(favoritePizzasOption);
         mouseHover(favoritePizzasOption);
+        favoritePizzasOption.click();
         return new FavoritePizzaOptions(driver);
     }
 

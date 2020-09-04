@@ -21,6 +21,7 @@ public class TestBase {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://www.papajohns.com.co/");
+        driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 
         navigation = new NavigationBar(driver);
     }
