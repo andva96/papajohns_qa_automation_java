@@ -7,6 +7,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
+import java.util.concurrent.TimeUnit;
+
 public class TestBase {
 
     WebDriver driver;
@@ -15,7 +17,7 @@ public class TestBase {
     @BeforeSuite
     public void previousSettings() {
 
-        WebDriverManager.chromedriver().browserVersion("85.0.4183.83").setup();
+        WebDriverManager.chromedriver().browserVersion("83.0.4103.39").setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://www.papajohns.com.co/");
@@ -27,7 +29,7 @@ public class TestBase {
     @AfterSuite
     public void closeDriver() {
 
-        driver.close();
+       // driver.close();
 
     }
 
