@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="2" name="TestSuite" time="0.009" errors="0" skipped="0">
+<testsuite tests="2" failures="2" name="TestSuite" time="0.016" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_221\jre\bin"/>
@@ -65,7 +65,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="endtoend.TestCrustOptions" name="validateCheeseBorderOptionOnTraditionalCrust" time="0.008">
+  <testcase classname="endtoend.TestCrustOptions" name="validateCheeseBorderOptionOnTraditionalCrust" time="0.012">
     <failure type="java.lang.NullPointerException">java.lang.NullPointerException
 	at endtoend.TestCrustOptions.validateCheeseBorderOptionOnTraditionalCrust(TestCrustOptions.java:12)
 </failure>
@@ -74,15 +74,15 @@
     <system-err>SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 25290
+Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 24836
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Sep 04, 2020 1:19:36 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Sep 04, 2020 2:42:02 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 </system-err>
   </testcase>
-  <testcase classname="endtoend.TestTotalPrices" name="validateTotalPriceOnPizzaOptions" time="0.001">
+  <testcase classname="endtoend.TestTotalPrices" name="validateTotalPriceOnPizzaOptions" time="0.004">
     <failure type="java.lang.NullPointerException">java.lang.NullPointerException
 	at endtoend.TestTotalPrices.validateTotalPriceOnPizzaOptions(TestTotalPrices.java:13)
 </failure>

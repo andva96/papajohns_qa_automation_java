@@ -16,9 +16,10 @@ public class NavigationBar extends PageBase {
 
     public FavoritePizzaOptions goToFavoritePizzaSection() {
 
-        waitUntilVisibilityOfElement(favoritePizzasOption);
+        waitUntilElementIsClickable(favoritePizzasOption);
         mouseHover(favoritePizzasOption);
         favoritePizzasOption.click();
+        System.out.println("Favorite pizza section selected");
         return new FavoritePizzaOptions(driver);
     }
 

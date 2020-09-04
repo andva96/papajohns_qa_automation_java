@@ -3,6 +3,7 @@ package com.pageobjects;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.interactions.touch.TouchActions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -14,6 +15,7 @@ public class PageBase {
     WebDriver driver;
     WebDriverWait wait;
     Actions action;
+    TouchActions touch;
 
     public PageBase(WebDriver driver) {
 
@@ -28,17 +30,22 @@ public class PageBase {
         wait.until(ExpectedConditions.visibilityOf(element));
     }
 
-    public void waitUntilElementIsSelected(WebElement element){
+    public void waitUntilElementIsSelected(WebElement element) {
 
         wait.until(ExpectedConditions.elementToBeSelected(element));
     }
 
-    public void waitUntilElementAreNotDisplayed(List<WebElement> element){
+    public void waitUntilElementIsClickable(WebElement element) {
+
+        wait.until(ExpectedConditions.elementToBeClickable(element));
+    }
+
+    public void waitUntilElementAreNotDisplayed(List<WebElement> element) {
 
         wait.until(ExpectedConditions.invisibilityOfAllElements(element));
     }
 
-    public void clickOnElement(WebElement element){
+    public void clickOnElement(WebElement element) {
 
         waitUntilVisibilityOfElement(element);
         element.click();
@@ -47,9 +54,8 @@ public class PageBase {
     public void mouseHover(WebElement element) {
 
         action.moveToElement(element).build().perform();
+
     }
-
-
 
 
 }

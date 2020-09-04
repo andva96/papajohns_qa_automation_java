@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="2" ignored="4" total="6" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="41" started-at="2020-09-04T13:19:41 COT" finished-at="2020-09-04T13:19:41 COT">
+  <suite name="Command line suite" duration-ms="52" started-at="2020-09-04T14:42:07 COT" finished-at="2020-09-04T14:42:07 COT">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="41" started-at="2020-09-04T13:19:41 COT" finished-at="2020-09-04T13:19:41 COT">
+    <test name="Command line test" duration-ms="52" started-at="2020-09-04T14:42:07 COT" finished-at="2020-09-04T14:42:07 COT">
       <class name="endtoend.TestCrustOptions">
-        <test-method status="FAIL" signature="validateCheeseBorderOptionOnTraditionalCrust()[pri:0, instance:endtoend.TestCrustOptions@1bce4f0a]" name="validateCheeseBorderOptionOnTraditionalCrust" duration-ms="1" started-at="2020-09-04T13:19:41 COT" finished-at="2020-09-04T13:19:41 COT">
+        <test-method status="FAIL" signature="validateCheeseBorderOptionOnTraditionalCrust()[pri:0, instance:endtoend.TestCrustOptions@1bce4f0a]" name="validateCheeseBorderOptionOnTraditionalCrust" duration-ms="2" started-at="2020-09-04T14:42:07 COT" finished-at="2020-09-04T14:42:07 COT">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -58,7 +58,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
         </test-method> <!-- validateCheeseBorderOptionOnTraditionalCrust -->
       </class> <!-- endtoend.TestCrustOptions -->
       <class name="endtoend.TestTotalPrices">
-        <test-method status="FAIL" signature="validateTotalPriceOnPizzaOptions()[pri:0, instance:endtoend.TestTotalPrices@5e3a8624]" name="validateTotalPriceOnPizzaOptions" duration-ms="1" started-at="2020-09-04T13:19:41 COT" finished-at="2020-09-04T13:19:41 COT">
+        <test-method status="FAIL" signature="validateTotalPriceOnPizzaOptions()[pri:0, instance:endtoend.TestTotalPrices@5e3a8624]" name="validateTotalPriceOnPizzaOptions" duration-ms="0" started-at="2020-09-04T14:42:07 COT" finished-at="2020-09-04T14:42:07 COT">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -109,11 +109,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
         </test-method> <!-- validateTotalPriceOnPizzaOptions -->
       </class> <!-- endtoend.TestTotalPrices -->
       <class name="endtoend.TestBase">
-        <test-method status="PASS" signature="previousSettings()[pri:0, instance:endtoend.TestBase@3bfdc050]" name="previousSettings" is-config="true" duration-ms="10892" started-at="2020-09-04T13:19:30 COT" finished-at="2020-09-04T13:19:41 COT">
+        <test-method status="PASS" signature="previousSettings()[pri:0, instance:endtoend.TestBase@3bfdc050]" name="previousSettings" is-config="true" duration-ms="10774" started-at="2020-09-04T14:41:56 COT" finished-at="2020-09-04T14:42:07 COT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- previousSettings -->
-        <test-method status="PASS" signature="closeDriver()[pri:0, instance:endtoend.TestBase@3bfdc050]" name="closeDriver" is-config="true" duration-ms="0" started-at="2020-09-04T13:19:41 COT" finished-at="2020-09-04T13:19:41 COT">
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:endtoend.TestBase@3bfdc050]" name="closeDriver" is-config="true" duration-ms="2113" started-at="2020-09-04T14:42:07 COT" finished-at="2020-09-04T14:42:09 COT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->

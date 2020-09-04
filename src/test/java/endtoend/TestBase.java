@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 
 public class TestBase {
 
-    WebDriver driver;
+    public WebDriver driver;
     NavigationBar navigation;
 
     @BeforeSuite
@@ -30,7 +30,7 @@ public class TestBase {
     @AfterSuite
     public void closeDriver() {
 
-       // driver.close();
+        driver.close();
 
     }
 

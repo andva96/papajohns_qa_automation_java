@@ -17,6 +17,7 @@ public class FavoritePizzaOptions extends PageBase {
     public PersonalizePizzaOptions selectPizzaType(String type) {
 
         if (type.equalsIgnoreCase("meet")) {
+            System.out.println("option selected: " + type);
             clickOnElement(meetOption);
         }
         return new PersonalizePizzaOptions(driver);

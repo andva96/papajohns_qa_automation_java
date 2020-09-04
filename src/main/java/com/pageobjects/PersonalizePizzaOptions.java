@@ -11,6 +11,9 @@ public class PersonalizePizzaOptions extends PageBase {
         super(driver);
     }
 
+    @FindBy(xpath = "//div[@class='producto_main']")
+    private WebElement productSectionSquare;
+
     @FindBy(xpath = "//a[@data-value='Familiar']")
     private WebElement familiarPizzaOption;
 
@@ -35,10 +38,13 @@ public class PersonalizePizzaOptions extends PageBase {
 
     public void selectPizzaSize(String pizzaSize) {
 
+        waitUntilVisibilityOfElement(productSectionSquare);
+
         if (pizzaSize.equalsIgnoreCase("familiar")) {
-            waitUntilVisibilityOfElement(familiarPizzaOption);
+            waitUntilElementIsClickable(familiarPizzaOption);
             mouseHover(familiarPizzaOption);
             familiarPizzaOption.click();
+            System.out.println("option selected: " + pizzaSize);
         }
 
     }
@@ -47,6 +53,7 @@ public class PersonalizePizzaOptions extends PageBase {
 
         if (crust.equalsIgnoreCase("traditional")) {
             clickOnElement(traditionalCrustOption);
+            System.out.println("crust selected: " + crust);
         }
     }
 
