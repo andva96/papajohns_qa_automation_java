@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class TestTotalPrices extends TestBase {
 
-    @Test(testName = "Validate if the correct total price is displayed on Pizza options section when adding chicken as a additional topping")
+    @Test(testName = "Validate if the correct total price is displayed on Pizza options section when adding chicken as an additional topping")
     public void validateTotalPriceOnPizzaOptions() {
 
         PersonalizePizzaOptions pizzaOptions = navigation.goToFavoritePizzaSection().selectPizzaType("meet");
